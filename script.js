@@ -1,7 +1,7 @@
-let roseURL = "http://127.0.0.1:5500/rose/rose.html";
-let gerberaURL = "http://127.0.0.1:5500/gerbera/gerbera.html";
-let sunURL = "http://127.0.0.1:5500/gerbera/gerbera.html";
-let tulipURL = "http://127.0.0.1:5500/gerbera/gerbera.html";
+let roseURL = "sun-01.jpg";
+let gerberaURL = "gerbera-01.jpg";
+let sunURL = "sun-01.jpg";
+let tulipURL = "tulip-01.jpg";
 let inputElement = document.querySelector("#input");
 
 let result = document.querySelector("#result");
@@ -29,7 +29,7 @@ inputElement.addEventListener("keydown", function(event){
         console.log(letter);
         
         // Create a new HTML image element for the card
-        let selectedCard = document.createElement("li");
+        let selectedCard = document.createElement("img");
         
         // If letter is any of these, use the devil card
         if (["a", "b", "c", "d", "e", "f"].includes(letter)){
