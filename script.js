@@ -1,4 +1,4 @@
-let roseURL = "sun-01.jpg";
+let roseURL = "rose-01.png";
 let gerberaURL = "gerbera-01.jpg";
 let sunURL = "sun-01.jpg";
 let tulipURL = "tulip-01.jpg";
