@@ -1,7 +1,12 @@
 let roseURL = "rose-01.png";
-let gerberaURL = "gerbera-01.jpg";
-let sunURL = "sun-01.jpg";
-let tulipURL = "tulip-01.jpg";
+let gerberaURL = "30.png";
+let sunURL = "40.png";
+let tulipURL = "50.png";
+let sevenURL = "70.png";
+let nineURL = "90.png";
+let hunURL = "100.png";
+
+
 let inputElement = document.querySelector("#input");
 
 let result = document.querySelector("#result");
@@ -19,7 +24,7 @@ inputElement.addEventListener("keydown", function(event){
     result.innerHTML = "";
 
      // Loop through 4 times
-    for (let i = 0; i < 4; i++){
+    for (let i = 0; i < 7; i++){
       
         // Print the number we're at in the loop
         console.log(i);
@@ -32,25 +37,36 @@ inputElement.addEventListener("keydown", function(event){
         let selectedCard = document.createElement("img");
         
         // If letter is any of these, use the devil card
-        if (["a", "b", "c", "d", "e", "f"].includes(letter)){
+        if (["a", "b"].includes(letter)){
           selectedCard.src = roseURL;
         }
         
         // If letter is any of these, use the magician card
-        if (["g", "h", "i", "j", "k", "l"].includes(letter) ){
+        if (["c", "d"].includes(letter) ){
           selectedCard.src = gerberaURL;
         }
         
         // If letter is any of these, use the star card
-        if (["m", "n", "o", "p", "q", "r"].includes(letter)){
+        if (["e", "f", "g"].includes(letter)){
           selectedCard.src = sunURL;
         }
         
         // If letter is any of these, use the moon card
-        if (["s", "t", "u", "v", "w", "x", "y", "z"].includes(letter)){
+        if (["h", "l", "j", "k", "l"].includes(letter)){
           selectedCard.src = tulipURL;
         }
         
+        if (["m", "n", "o", "p", "q"].includes(letter)){
+          selectedCard.src = sevenURL;
+        }
+
+        if (["r", "s", "t", "u"].includes(letter)){
+          selectedCard.src = nineURL;
+        }
+
+        if (["v", "w", "x", "y", "z"].includes(letter)){
+          selectedCard.src = hunURL;
+        }
         result.appendChild(selectedCard);
         
       }
