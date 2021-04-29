@@ -11,6 +11,10 @@ h1{
     color: rgb(34, 57, 77);
     
 }
+p{
+    color: rgb(27, 27, 27);
+    font-size: 30px;
+}
 input{
     position:absolute;
     left:0;
