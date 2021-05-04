@@ -37,30 +37,30 @@ inputElement.addEventListener("keydown", function(event){
         let selectedCard = document.createElement("img");
         
         // If letter is any of these, use the devil card
-        if (["a", "b"].includes(letter)){
+        if (["a", "c"].includes(letter)){
           selectedCard.src = roseURL;
         }
         
         // If letter is any of these, use the magician card
-        if (["c", "d"].includes(letter) ){
+        if (["b", "d"].includes(letter) ){
           selectedCard.src = gerberaURL;
         }
         
         // If letter is any of these, use the star card
-        if (["e", "f", "g"].includes(letter)){
+        if (["e", "j", "g"].includes(letter)){
           selectedCard.src = sunURL;
         }
         
         // If letter is any of these, use the moon card
-        if (["h", "l", "j", "k", "l"].includes(letter)){
+        if (["h", "l", "f", "k", "q"].includes(letter)){
           selectedCard.src = tulipURL;
         }
         
-        if (["m", "n", "o", "p", "q"].includes(letter)){
+        if (["m", "s", "o", "p", "i"].includes(letter)){
           selectedCard.src = sevenURL;
         }
 
-        if (["r", "s", "t", "u"].includes(letter)){
+        if (["r", "n", "t", "u"].includes(letter)){
           selectedCard.src = nineURL;
         }
 
