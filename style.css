@@ -8,23 +8,75 @@ body{
     background-image: repeating-linear-gradient(90deg, rgb(171,115,115) 0px, rgb(171,115,115) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, rgb(171,115,115) 0px, rgb(171,115,115) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, rgb(244,255,156) 0px, rgb(244,255,156) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(90deg, rgb(244,255,156) 0px, rgb(244,255,156) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(244,255,156),rgb(244,255,156));
 }
 
-h1{
-    margin-top: 150px;
-    font-size: 60px;
-    color: rgb(0, 0, 0);
-    
-}
-p{
-    color: rgb(27, 27, 27);
-    font-size: 50px;
-   
-}
+.wrapper {
+    height: 40vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    width: 24ch;
+    animation: typing 2s steps(22), blink .7s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 7px solid;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 5em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .twowrapper {
+    height: 2vh;
+    /*This part is important for centering*/
+    display: flex;
+    margin-top: -60px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .twotyping-demo {
+    width: 40ch;
+    animation: typing 7s steps(22), blink .7s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    border-color: #32b1b1;
+    color: #32b1b1;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
 input{
     position:absolute;
     left:0;
     right:0;
     margin:auto;
-     top:39%;
+     top:46%;
     transform:translateY(-50%);
     text-align:center;
     overflow:hidden;
