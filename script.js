@@ -24,7 +24,7 @@ inputElement.addEventListener("keydown", function(event){
     result.innerHTML = "";
 
      // Loop through 4 times
-    for (let i = 0; i < 7; i++){
+     for (let i = 0; i < 1; i++){
       
         // Print the number we're at in the loop
         console.log(i);
