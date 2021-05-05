@@ -8,6 +8,67 @@ body{
     background-image: repeating-linear-gradient(90deg, rgb(171,115,115) 0px, rgb(171,115,115) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, rgb(171,115,115) 0px, rgb(171,115,115) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, rgb(244,255,156) 0px, rgb(244,255,156) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(90deg, rgb(244,255,156) 0px, rgb(244,255,156) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(244,255,156),rgb(244,255,156));
 }
 
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim .5s infinite alternate;
+  pointer-events: none;
+}
+
+.cursor::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 10px solid rgb(53, 158, 153);
+  border-radius: 50%;
+  opacity: 3.5;
+  top: -8px;
+  left: -8px;
+  animation: cursorAnim2 .8s infinite alternate;
+}
+
+@keyframes cursorAnim {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(.7);
+  }
+}
+
+@keyframes cursorAnim2 {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(.4);
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(3);
+  }
+  100% {
+      transform: scale(1);
+      opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursorAnim3 .5s forwards;
+  border: 1px solid rgb(212, 138, 138);
+}
+
 .wrapper {
     height: 40vh;
     /*This part is important for centering*/
