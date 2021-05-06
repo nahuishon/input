@@ -66,10 +66,7 @@ inputElement.addEventListener("keydown", function(event){
 
         if (["v", "w", "x", "y", "z"].includes(letter)){
           selectedCard.src = hunURL;
-         
-    
         }
-
         result.appendChild(selectedCard);
         
       }
