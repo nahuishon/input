@@ -1,4 +1,4 @@
-let roseURL = "rose-01.png";
+let roseURL = "10.png";
 let gerberaURL = "30.png";
 let sunURL = "40.png";
 let tulipURL = "50.png";
@@ -66,7 +66,10 @@ inputElement.addEventListener("keydown", function(event){
 
         if (["v", "w", "x", "y", "z"].includes(letter)){
           selectedCard.src = hunURL;
+         
+    
         }
+
         result.appendChild(selectedCard);
         
       }
