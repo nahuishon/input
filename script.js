@@ -61,6 +61,9 @@ inputElement.addEventListener("keydown", function(event){
         
         if (["m", "s", "o", "p", "i"].includes(letter)){
           selectedCard.src = sevenURL;
+          if (event.key == "Enter"){
+            document.body.classList.toggle("green");
+          }
         }
 
         if (["r", "n", "t", "u"].includes(letter)){
@@ -72,7 +75,7 @@ inputElement.addEventListener("keydown", function(event){
           if (event.key == "Enter"){
     document.body.classList.toggle("blue");
   }
-        }
+   }
        
         result.appendChild(selectedCard);
         

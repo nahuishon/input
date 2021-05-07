@@ -165,7 +165,9 @@ input{
 .red{
   background: linear-gradient(#6e6366, #c5b6ac);
 }
-
+.green{
+  background: linear-gradient(#f06b6b, #8488b4);
+}
 
 
 /* Extra small devices (phones, 480px and down) */
