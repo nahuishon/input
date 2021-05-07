@@ -57,9 +57,6 @@ inputElement.addEventListener("keydown", function(event){
         // If letter is any of these, use the moon card
         if (["h", "l", "f", "k", "q"].includes(letter)){
           selectedCard.src = tulipURL;
-          if (event.key == "Enter"){
-            document.body.classList.toggle("green");
-          }
         }
         
         if (["m", "s", "o", "p", "i"].includes(letter)){
