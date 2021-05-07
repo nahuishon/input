@@ -39,6 +39,9 @@ inputElement.addEventListener("keydown", function(event){
         // If letter is any of these, use the devil card
         if (["a", "c"].includes(letter)){
           selectedCard.src = roseURL;
+          if (event.key == "Enter"){
+            document.body.classList.toggle("red");
+          }
         }
         
         // If letter is any of these, use the magician card
@@ -54,6 +57,9 @@ inputElement.addEventListener("keydown", function(event){
         // If letter is any of these, use the moon card
         if (["h", "l", "f", "k", "q"].includes(letter)){
           selectedCard.src = tulipURL;
+          if (event.key == "Enter"){
+            document.body.classList.toggle("green");
+          }
         }
         
         if (["m", "s", "o", "p", "i"].includes(letter)){
@@ -66,7 +72,11 @@ inputElement.addEventListener("keydown", function(event){
 
         if (["v", "w", "x", "y", "z"].includes(letter)){
           selectedCard.src = hunURL;
+          if (event.key == "Enter"){
+    document.body.classList.toggle("blue");
+  }
         }
+       
         result.appendChild(selectedCard);
         
       }
