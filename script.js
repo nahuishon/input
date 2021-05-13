@@ -47,30 +47,39 @@ inputElement.addEventListener("keydown", function(event){
         // If letter is any of these, use the magician card
         if (["b", "d"].includes(letter) ){
           selectedCard.src = gerberaURL;
+          if (event.key == "Enter"){
+            document.body.classList.toggle("green");
+          }
         }
         
         // If letter is any of these, use the star card
         if (["e", "j", "g"].includes(letter)){
           selectedCard.src = sunURL;
+          if (event.key == "Enter"){
+            document.body.classList.toggle("green");
+          }
         }
         
         // If letter is any of these, use the moon card
         if (["h", "l", "f", "k", "q"].includes(letter)){
           selectedCard.src = tulipURL;
+          if (event.key == "Enter"){
+            document.body.classList.toggle("green");
+          }
         }
         
-        if (["m", "s", "o", "p", "i"].includes(letter)){
+        if (["m", "s", "p"].includes(letter)){
           selectedCard.src = sevenURL;
           if (event.key == "Enter"){
             document.body.classList.toggle("green");
           }
         }
 
-        if (["r", "n", "t", "u"].includes(letter)){
+        if (["r", "n", "t", "u","v", "w", "x"].includes(letter)){
           selectedCard.src = nineURL;
         }
 
-        if (["v", "w", "x", "y", "z"].includes(letter)){
+        if (["y", "z","o"].includes(letter)){
           selectedCard.src = hunURL;
           if (event.key == "Enter"){
     document.body.classList.toggle("blue");
